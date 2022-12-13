@@ -1,0 +1,132 @@
+<html>
+
+<head>
+	<title>Admission Form</title>
+	<link rel="stylesheet" href="form1.css">
+</head>
+
+<body>
+
+	<center>
+		<img
+			src="https://i0.wp.com/blog.oureducation.in/wp-content/uploads/2018/08/Vishwakarma-Institute-Of-Technology-Neet-Coaching-Pune-R.png?ssl=1">
+		<br>
+		<h2> Student Registration Form</h2>
+	</center>
+	<form>
+		<div class="main">
+			<div class='row'>
+				<label> Firstname: </label>
+				<div class='col'>
+					<input type="text" name="firstname" placeholder="Firstname" size="15" required /> <br>
+				</div>
+			</div>
+			<div class='row'>
+				<label> Middlename: </label>
+				<div class='col'><input type="text" name="middlename" placeholder="Middlename" size="15" required />
+					<br></div>
+			</div>
+			<div class='row'>
+				<label> Lastname: </label>
+				<div class='col'><input type="text" name="lastname" placeholder="Lastname" size="15" required /> <br>
+				</div>
+
+			</div>
+			<div class='row'>
+				<label> Date of Birth : </label>
+				<div class='col'><input type="date" name="dob"> <br></div>
+
+			</div>
+			<div class='row'>
+				<label>Gender : </label>
+				<div class='col'>
+					<div class="pick">
+						<input class ='pi' type="radio" value="Male" name="gender"> Male
+						<input class ='pi' type="radio" value="Female" name="gender"> Female
+						<input class ='pi' type="radio" value="Other" name="gender"> Other <br>
+					</div>
+				</div>
+
+			</div>
+			<div class='row'>
+				<label>Degree : </label>
+				<div class='col'>
+					<select>
+						<option value=NULL>--select--</option>
+						<option value="BCA">BCA</option>
+						<option value="BBA">BBA</option>
+						<option value="B.Tech">B.Tech</option>
+						<option value="MBA">MBA</option>
+						<option value="MCA">MCA</option>
+						<option value="M.Tech">M.Tech</option>
+					</select><br>
+				</div>
+
+			</div>
+			<div class='row'>
+				<label>Course: </label>
+				<div class='col'>
+					<select>
+						<option value=NULL>--select--</option>
+						<option value="CSE">Computer Science</option>
+						<option value="IT">Information Technology</option>
+						<option value="ENTC">Electronics and Telecommunications</option>
+						<option value="Elec">Electrical</option>
+					</select>
+				</div>
+
+			</div>
+			<div class='row'>
+				<label> Phone:</label>
+				<div class='col'>
+					<div class="'row2">
+						<input class = 'country' type="text" name="country code" placeholder="Country Code" value="+91" size="2" />
+						<input class = 'phone' type="text" name="phone" placeholder="phone no." size="10" required> <br></div>
+					
+				</div>
+
+			</div>
+			<div class='row'>
+				<label>Current Address : </label>
+				<div class='col'>
+					<input placeholder="Current Address" required><br>
+				</div>
+
+			</div>
+			<div class='row'>
+				<label>City : </label>
+				<div class='col'>
+					<input type="text" placeholder="City"><br>
+				</div>
+
+			</div>
+			<div class='row'>
+				<label for="email"><b>Email : </b></label>
+				<div class='col'>
+					<input type="email" placeholder="Enter Email" name="email" required> <br>
+				</div>
+			</div>
+			<div class='row'>
+				<label for="psw"><b>Password : </b></label>
+				<div class='col'>
+					<input type="password" placeholder="Enter Password" name="psw" required> <br>
+				</div>
+
+			</div>
+			<div class='row'>
+				<label for="psw-repeat"><b>Re-type Password : </b></label>
+				<div class='col'>
+					<input type="password" placeholder="Retype Password" name="psw-repeat" required> <br>
+				</div>
+
+			</div>
+			<button type="submit" class="registerbtn" onclick="ValidateEmailandNumandName(document.main.row.email,document.main.row.phone,document.main.firstname)">Register</button><br>
+			
+			<button type="reset" class="resetbtn">Reset</button>
+
+		</div>
+	</form>
+
+</body>
+
+</html>

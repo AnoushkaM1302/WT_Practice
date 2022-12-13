@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Lab 5</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <h1 style="padding-left: 2vw;">Tab View</h1>
+    <div class="container">
+
+        <ul class="nav nav-tabs">
+
+            <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+            <li><a data-toggle="tab" href="#cv">cv</a></li>
+            <li><a data-toggle="tab" href="#form"> form</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h3>HOME</h3>
+                <p>This is the home tab</p>
+            </div>
+            <div id="cv" class="tab-pane fade">
+                <div class="header">
+                    <h1>Siddhi Chavan </h1>
+                    <p>Microsoft certified principal data scientist with 10 years of experience creating models that
+                        predict stock
+                        prices and investment returns. Achieved 23% higher improvement and accuracy</p>
+                </div>
+               
+                <div class="container">
+                    <p>
+                    <h2>PERSONAL INFORMATION</h2>
+                    <p>Links: </p>
+                    <a href="www.linkedin.com/in/siddhi-c
+                        havan-b0a7481b8
+                        ">linkedin</a>
+                    <br>
+                    <a href="https://github.com/36sid">github</a>
+                    <br>
+                    <a href="https://leetcode.com/siddhi_0
+                        36/
+                        ">leetcode</a>
+
+                    <h2>WORK EXPERIENCE</h2>
+
+                    <h3>Principal Data Scientist, Danaher</h3>
+                    <ul>
+                        <li>Developed a vision, framework, approached and planned for each of your projects
+                            Set milestones as project goals, provided direction, gave team the ability to understand
+                            what is
+                            expected of them to move the projects forward</li>
+
+                        <li>Set and communicated the desired outcome of the projects is a critical part of your role
+                        </li>
+                        <li>Led & supported the development, optimization and migration of new or existing technologies
+                        </li>
+                        <li>Brought the technology challenges into R&D through translating problems to implementation
+                        </li>
+                        <li>Developed technology concepts and guided equipment selection</li>
+                    </ul>
+                    <br>
+                    <h3>Data Scientist, Abiomed</h3>
+                    <ul>
+                        <li>Designed new statistical and physiological features for time series data</li>
+                        <li>Evaluated algorithm performance in offline (in silico) and live (in vitro, in vivo)
+                            environments</li>
+                        <li>Collaborated with software teams to implement algorithms on embedded hardware</li>
+                        <li>Maintained concise descriptions of algorithm design specifications and performance
+                            evaluations</li>
+
+                    </ul>
+                    <br>
+                    <div class="second_col">
+                        <h2>SKILLS</h2>
+                        <p>R Studio, Python, Cloudera, Data Visualization, Modeling, Machine Learning, Statistics,
+                            Problem Solving,
+                            Critical & Creative Thinking, Communication, Organization, Time Management</p>
+                        <br>
+                        <h2>CERTIFICATIONS</h2>
+                        <p>
+                        <ul>
+                            <li>Microsoft Professional Program Certificate</li>
+                            <li> Certification of Professional Data Engineer</li>
+                        </ul>
+                        </p>
+                        <h2>ACHEIVEMENTS</h2>
+                        <p>
+                            2nd Runner - up in the IAS Hackathon. The problem statement was to
+                            build a NoSQL database which had to pass certain benchmarks.
+                            First round was a coding round ( intra-college) and the second round was
+                            a development round (inter-college).
+
+                        </p>
+                        <h2>EDUCATION</h2>
+                        <ul>
+                            <li>
+                                <h3>Bay Path University</h3>
+                                <p>Bay Path University
+                                    <br>
+                                    Master's in Data Science
+                                    <br>
+                                    GPA: 3.8/4.0
+                                </p>
+                            </li>
+                            <li>
+                                <h3>Becker College</h3>
+                                <p>
+                                    Worcester, MA • 2004 — 2008
+                                    <br>
+                                    Worcester, MA • 2004 — 2008
+                                    <br>
+                                    GPA: 3.6/4.0
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+
+                    </p>
+                </div>
+            </div>
+            <div id="form" class="tab-pane fade">
+                <div class="header">
+                    <img src="vit_logo.jpg" style="height: 100px; padding: 20px">
+                    <h1 text-align="center">Student Application Form</h1>
+                    <br />
+                </div>
+    
+                <div class="form">
+                    <form>
+                        <label for="firstname"> First Name: </label>
+                        <input type="text" name="firstname" id="firstname" required maxlength="25" required />
+                        <br />
+                        <br />
+                        <br />
+                        <label for="lastname"> Last Name: </label>
+                        <input type="text" name="lastname" id="lastname" required maxlength="25" />
+                        <br />
+                        <br />
+                        <br />
+                        <label for="email"> Email: </label>
+                        <input type="email" name="email" id="email" required maxlength="45" />
+                        <br />
+                        <br />
+                        <br />
+    
+                        <label for="Year">Year:</label>
+                        <input list="years" name="year" id="year" />
+    
+                        <datalist id="years">
+                            <option value="First"></option>
+                            <option value="Second"></option>
+                            <option value="Third"></option>
+                            <option value="Fourth"></option>
+                        </datalist>
+    
+                        <br />
+                        <br />
+                        <br />
+    
+                        <label for="Division">Division:</label>
+                        <input list="divs" name="division" id="division" />
+    
+                        <datalist id="divs">
+                            <option value="A"></option>
+                            <option value="B"></option>
+                            <option value="C"></option>
+                            <option value="D"></option>
+                        </datalist>
+    
+                        <br />
+                        <br />
+                        <br />
+    
+                        <label for="branch">Branch:</label>
+                        <input list="branches" name="branch" id="branch" />
+    
+                        <datalist id="branches">
+                            <option value="Computer"></option>
+                            <option value="Information Technology"></option>
+                            <option value="E&TC"></option>
+                        </datalist>
+    
+                        <br />
+                        <br />
+                        <br />
+    
+                        <label for="contact"> Contact: </label>
+                        <input type="con" name="contact" id="contact" required maxlength="10" />
+                        <br />
+                        <br />
+                        <br />
+    
+                        <label for="address"> Address: </label>
+                        <input type="text" name="address" id="address" required maxlength="100" />
+                        <br />
+                        <br />
+                        <br />
+    
+                        <label for="photo">Upload your profile photo:</label>
+                        <input type="file" id="photo" required />
+                        <br />
+    
+                        <div class="button" margin="auto">
+                            <button>Submit</button>
+                        </div>
+                    </form>
+    
+                </div>
+            </div>
+        </div>
+        
+
+    </div>
+    </div>
+    <style>
+        .tab-content {
+            background-color: lightblue;
+            padding-left: 2vw;
+        }
+
+        #cv .header h1 {
+            color: white;
+            text-align: left;
+            font-weight: bold;
+            font-size: 2vw;
+            width: 100vw;
+        }
+
+        #cv .header {
+            background-color: darkblue;
+            font-family: Arial, Helvetica, sans-serif;
+
+            width: 100vw;
+            font-size: 1vw;
+            text-align: justify;
+            color: rgb(193, 235, 249);
+            padding-left: 2vw;
+        }
+
+
+
+        #cv .container {
+            background-color: lightblue;
+
+            width: 100vw;
+
+
+            font-size: 1vw;
+
+            /* columns */
+            column-count: 2;
+            column-gap: 2vw;
+            text-align: justify;
+            padding-left: 1vw;
+            padding-top: 2vh;
+
+        }
+
+
+        @media screen and (max-width: 600px) {
+            #cv .container {
+                width: 100vw;
+                column-count: 1;
+                font-size: 2vw;
+            }
+
+            #cv .header h1 {
+                font-size: 4vw;
+            }
+
+            #cv .header {
+                font-size: 2vw;
+
+            }
+        }
+    </style>
+</body>
+
+</html>

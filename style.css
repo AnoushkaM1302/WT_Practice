@@ -1,0 +1,63 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 0;
+}
+.header h1{
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.header{
+    background-color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 15vh;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    font-size: 1vw;
+    text-align: justify;
+    color: rgb(193, 235, 249);
+    padding-left: 2vw;
+}
+
+hr { 
+    height: 5%;
+    background-color: black;
+    overflow: hidden;
+}
+
+.container{
+    background-color: lightblue;
+    height: 85vh;
+    width: 100vw;
+    position: absolute;
+    top: 17vh;
+    font-size: 1vw;
+
+    /* columns */
+    column-count: 2;
+    column-gap: 4vw;
+    text-align: justify;
+    padding-left: 2vw;
+    padding-top: 2vh;
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100vw;
+        column-count: 1;
+        font-size: 2vw;
+    }
+    .header h1{
+        font-size: 4vw;
+    }
+    .header{
+        font-size: 2vw;
+        height: 15vh;
+    }
+  }
+

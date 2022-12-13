@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Admission VIT Pune</title>
+</head>
+
+<body>
+    <h1>VIT Pune</h1>
+    <div class="card">
+        <h2>Admission Form</h2>
+        <form action="" name="form1"> <br>
+            <fieldset>
+                <legend> Admission form: </legend>
+                <label for="source">Full Name</label>
+                <input type="text" id="source" name="fullName">
+                <br> <br>
+                <label for="source">Mother's Name</label>
+                <input type="text" id="source">
+                <br> <br>
+                <label for="source">E-mail</label>
+                <input type="text" id="source" name='text1'> <br> <br>
+                <label for="num">Phone Number</label>
+                <input type="text" id="num" name='phoneNo'>
+                <br> <br>
+                <input type="checkbox" id="ICSE">
+                <label for="ICSE">ICSE</label><br> <input type="checkbox" id="CBSE"> <label for="CBSE">CBSE</label><br>
+                <input type="checkbox" id="SSC"> <label for="SSC">SSC</label><br>
+            </fieldset>
+    </div>
+    <br> <br>
+    <div class="card">
+        <fieldset>
+            <legend>Personal details:</legend>
+            <label for="gender">Gender: </label>
+            <br>
+            <input type="radio" name="gender" value="male"> Male<br>
+            <input type="radio" name="gender" value="female"> Female<br>
+            <input type="radio" name="gender" value="other"> Other <br> <br> <label for="age">Age</label><br>
+            <input type="number" name="" id="age"> <br> <br> <label for="percentile">JEE Percentile x 100</label><br>
+            <input type="number" name="" id="age"> <br> <br> <label for="date">Date of Birth: </label><br>
+            <input type="date" name="" id="date"> <br> <br> <br>
+            <textarea name="Address" id="address" cols="50" rows="10">Address</textarea>
+        </fieldset> 
+        <br> 
+        <input type="submit" value="Submit"
+            onclick="ValidateEmailandNumandName(document.form1.text1,document.form1.phoneNo,document.form1.fullName)">
+        </form>
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* 
+
+body {
+  margin: auto;
+  font-size: large;
+  font-family: 'Poppins', Helvetica, sans-serif;
+}
+
+.center {
+  
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  
+}
+
+#myVideo {
+    position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+
+}
+
+.content {
+    position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+h1{
+    color: #f1f1f1;
+
+}
+
+@media only screen and (max-width: 767px) {
+  
+}
